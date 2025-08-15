@@ -43,10 +43,19 @@ export default function HomePage() {
                 Liên Hệ
               </a>
             </div>
-            <Button className="bg-green-600 hover:bg-green-700 text-white rounded-full px-6">
-              <Phone className="h-4 w-4 mr-2" />
-              Gọi Ngay
-            </Button>
+            <div className="flex space-x-3">
+              <Button className="bg-green-600 hover:bg-green-700 text-white rounded-full px-6">
+                <Phone className="h-4 w-4 mr-2" />
+                Gọi Ngay
+              </Button>
+              <Button 
+                asChild
+                variant="outline" 
+                className="border-green-600 text-green-600 hover:bg-green-50 rounded-full px-6"
+              >
+                <a href="/admin">Quản lý</a>
+              </Button>
+            </div>
           </div>
         </div>
       </nav>
